@@ -1,0 +1,125 @@
+body{
+    position: relative;
+    background-color: grey;
+}
+
+/* todolist container */
+#todo-list-container{
+    width : 50%;
+    height: auto;
+    background-color: white;
+    position : absolute;
+    top: 25%;
+    left: 25%;
+}
+
+/* design input field */
+#input-box {
+    padding: 20px;
+    width: 60%;
+    margin: 10px 0px 0px 60px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    outline: none;
+    border: 2px solid black;
+    position: relative;
+}
+#input-box:focus {
+    background-color: lightgrey;
+}
+
+/* design list items */
+#list-items{
+    margin-left : 50px;
+    font-size : 3rem;
+    font-family: sans-serif;
+    list-style: none;
+}
+#list-items li {
+    margin : 20px;
+    margin-top : 10px;
+    letter-spacing: 0.5px;
+    position : relative;
+}
+/* design checkbox */
+input[type="checkbox"]{
+    transform: scale(2);
+    margin : 0px 40px 40px 0px;
+}
+.checkbox:checked + label{
+    color: purple;
+    font-size: 4rem;
+    animation : fade 1s ease-in-out infinite alternate;
+}
+@keyframes fade{
+    from{
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+/* design cross button */
+.cross-button{
+    position : absolute;
+    outline: none;
+    cursor: pointer;
+    right : 10%;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding : 10px 20px;
+    font-size : 2rem;
+    background-color: white;
+    color: red;
+}
+.cross-button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 50%;
+    border : 2px solid black;
+}
+
+/* design clear list button */
+#clear-button{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin : 10px 0px;
+}
+#clear-button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/*design add item button */
+#add-button{
+    background-color: green;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin : 10px 10px;
+}
+#add-button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+/* design display count text */
+.display-items-count-text {
+    font-size: 18px;
+    margin-left: 30px;
+}
+/* no of items */
+.display-items-count-text span {
+    font-weight: bold;
+    font-size: 30px;
+}
